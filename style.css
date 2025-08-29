@@ -1,0 +1,66 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: contain;   /* zoomed-out so whole picture shows */
+  background-color: #000;     /* fill gaps with black */
+  height: 100vh;
+}
+
+/* Semi-transparent overlay for readability */
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  color: #ff99cc;
+  margin-top: 10px;
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#yesBtn {
+  background-color: #ff4d6d;
+  color: white;
+}
+#noBtn {
+  background-color: #999;
+  color: white;
+}
